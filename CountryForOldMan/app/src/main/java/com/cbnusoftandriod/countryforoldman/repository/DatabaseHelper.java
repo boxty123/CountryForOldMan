@@ -4,6 +4,9 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.cbnusoftandriod.countryforoldman.Entity.ShopEntity;
+import com.cbnusoftandriod.countryforoldman.Entity.UserEntity;
+
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "countryforoldman.db";

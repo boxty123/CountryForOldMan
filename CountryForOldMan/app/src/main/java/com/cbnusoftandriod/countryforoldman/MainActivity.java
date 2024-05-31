@@ -8,11 +8,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 
 import com.cbnusoftandriod.countryforoldman.model.User;
 import com.cbnusoftandriod.countryforoldman.repository.DatabaseHelper;
-import com.cbnusoftandriod.countryforoldman.repository.UserDAO;
+import com.cbnusoftandriod.countryforoldman.DAO.UserDAO;
 import com.cbnusoftandriod.countryforoldman.repository.UserRepository;
 
 public class MainActivity extends AppCompatActivity {

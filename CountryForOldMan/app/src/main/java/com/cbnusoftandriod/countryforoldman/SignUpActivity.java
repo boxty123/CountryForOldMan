@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.cbnusoftandriod.countryforoldman.repository.UserDAO;
+import com.cbnusoftandriod.countryforoldman.DAO.UserDAO;
 import com.cbnusoftandriod.countryforoldman.repository.UserRepository;
 
 public class SignUpActivity extends AppCompatActivity {

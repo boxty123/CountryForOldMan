@@ -1,4 +1,4 @@
-package com.cbnusoftandriod.countryforoldman.repository;
+package com.cbnusoftandriod.countryforoldman.Entity;
 
 public class ShopEntity {
     public static final String TABLE_NAME = "shop";

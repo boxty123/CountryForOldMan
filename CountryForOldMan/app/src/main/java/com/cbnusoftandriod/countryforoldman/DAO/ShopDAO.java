@@ -1,4 +1,4 @@
-package com.cbnusoftandriod.countryforoldman.repository;
+package com.cbnusoftandriod.countryforoldman.DAO;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,6 +8,8 @@ import android.database.sqlite.SQLiteDatabase;
 import com.cbnusoftandriod.countryforoldman.MainActivity;
 import com.cbnusoftandriod.countryforoldman.model.Shop;
 import com.cbnusoftandriod.countryforoldman.model.User;
+import com.cbnusoftandriod.countryforoldman.repository.DatabaseHelper;
+import com.cbnusoftandriod.countryforoldman.Entity.ShopEntity;
 
 public class ShopDAO {
     private static ShopDAO instance;
@@ -50,6 +52,16 @@ public class ShopDAO {
         return db.insert(ShopEntity.TABLE_NAME, null, values);
     }
 
+    public int delete(){
+
+        User user=MainActivity.getUser();
+
+        SQLiteDatabase db = databaseHelper.getWritableDatabase();
+
+
+        return db.delete(ShopEntity.TABLE_NAME,ShopEntity.COLUMN_NAME_OWNER_ID,user.getId());
+    }
+
     public String getPhoneNumberById(Integer _id) {
         SQLiteDatabase db = databaseHelper.getReadableDatabase();
         String phoneNumber = null;
@@ -67,4 +79,10 @@ public class ShopDAO {
         }
         return phoneNumber;
     }
+
+    public void sort_by_distance(){
+
+    }
+
+
 }

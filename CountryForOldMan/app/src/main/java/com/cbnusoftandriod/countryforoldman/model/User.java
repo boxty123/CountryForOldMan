@@ -1,9 +1,5 @@
 package com.cbnusoftandriod.countryforoldman.model;
 
-import android.content.Context;
-
-import com.cbnusoftandriod.countryforoldman.repository.UserDAO;
-
 public class User {
 
     private String username;

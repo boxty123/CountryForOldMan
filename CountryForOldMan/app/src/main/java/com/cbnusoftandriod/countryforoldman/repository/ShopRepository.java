@@ -3,6 +3,8 @@ package com.cbnusoftandriod.countryforoldman.repository;
 import android.content.Context;
 import android.widget.Toast;
 
+import com.cbnusoftandriod.countryforoldman.DAO.ShopDAO;
+import com.cbnusoftandriod.countryforoldman.DAO.UserDAO;
 import com.cbnusoftandriod.countryforoldman.MainActivity;
 import com.cbnusoftandriod.countryforoldman.model.Shop;
 import com.cbnusoftandriod.countryforoldman.model.User;
@@ -50,4 +52,10 @@ public class ShopRepository {
 
         return shopId;
     }
+
+    public void deleteShop(String shopname,String OwnerId){
+
+        shopDAO.delete();
+    }
+
 }

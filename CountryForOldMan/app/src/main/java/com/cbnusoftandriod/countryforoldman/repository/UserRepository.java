@@ -3,6 +3,7 @@ package com.cbnusoftandriod.countryforoldman.repository;
 import android.content.Context;
 import android.widget.Toast;
 
+import com.cbnusoftandriod.countryforoldman.DAO.UserDAO;
 import com.cbnusoftandriod.countryforoldman.model.User;
 
 public class UserRepository {
